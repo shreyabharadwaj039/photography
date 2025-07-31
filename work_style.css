@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-pills .nav-link.active {
+    background-color: rgb(59, 57, 57);
+    opacity: 80%; /* Active button background color */
+    color: white;           /* Active button text color */
+}
+  .nav-pills .nav-link {
+    color: black;    /* Default button text color */
+    font-weight: 500;
+
+}
+
+.logo {
+    font-family: 'Pinyon Script', cursive; /* Choose the specific font here */
+    font-size: 30px; /* Adjust size to your preference */
+    font-weight: 400; /* Adjust weight to match the font style */
+    color: #4c4a4a;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.navbar-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for navbar */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nav-item img {
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.nav-item img:hover {
+    transform: scale(1.75); /* Slight zoom on hover */
+}
+/* Center the logo and adjust navbar alignment when the screen shrinks */
+.social-media-container{
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+    
+    #navbarContent {
+        display: flex !important;
+    }
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 991px) {
+    #pillNav2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .social-media-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #navbarContent{
+        background-color: rgb(142, 141, 141);
+        opacity: 80%;
+        border-radius: 5%;
+    }
+}
+.col{
+    padding-top: 75px;
+    padding-left: 40px;
+}
+.card img{
+    height: 300px;
+}
+.card {
+    border: none; /* Removes the border */
+    box-shadow: none; /* Removes any default Bootstrap shadows */
+    background-color: transparent; /* Optional: Makes background transparent */
+}
+.card-img-top {
+    border-radius: 0; /* Ensures images have no rounded corners */
+}
+
+.card-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px; 
+    letter-spacing: 2px; 
+    font-weight: bolder;
+    color: #4a3b05;
+}

@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-pills .nav-link.active {
+    background-color: rgb(59, 57, 57);
+    opacity: 80%; /* Active button background color */
+    color: white;           /* Active button text color */
+}
+  .nav-pills .nav-link {
+    color: black;    /* Default button text color */
+    font-weight: 500;
+
+}
+
+.logo {
+    font-family: 'Pinyon Script', cursive; /* Choose the specific font here */
+    font-size: 30px; /* Adjust size to your preference */
+    font-weight: 400; /* Adjust weight to match the font style */
+    color: #4c4a4a;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.navbar-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for navbar */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nav-item img {
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.nav-item img:hover {
+    transform: scale(1.75); /* Slight zoom on hover */
+}
+/* Center the logo and adjust navbar alignment when the screen shrinks */
+.social-media-container{
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+    
+    #navbarContent {
+        display: flex !important;
+    }
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 991px) {
+    #pillNav2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .social-media-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #navbarContent{
+        background-color: rgb(142, 141, 141);
+        opacity: 80%;
+        border-radius: 5%;
+    }
+}
+.container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px; /* Consistent gap between columns */
+    width: 100%;
+}
+
+/* Column styling - flexible for any number of columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.33% - 2px); /* 3 columns by default, accounting for gaps */
+    max-width: calc(33.33% - 2px);
+    gap: 3px; /* Consistent gap between images in each column */
+}
+
+/* Photo styling */
+.photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+/* Make modal background transparent */
+/* Full-screen modal */
+.modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    background: rgba(239, 235, 235, 0.427); /* Semi-transparent background */
+    border: none;
+    box-shadow: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal body - semi-transparent background */
+.modal-body {
+    background: rgba(239, 235, 235, 0.427); /* Background transparency */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Ensure modal backdrop (overlay) is semi-transparent */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Dark overlay */
+}
+
+/* Ensure image is centered and fully visible */
+#modalImage {
+    max-width: 90%;
+    max-height: 90vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Navigation Buttons - Extreme left and right */
+.modal-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(79, 77, 77);
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    background: none !important; /* Remove background */
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.modal-btn:hover {
+    color: #3d3c3c; /* Lighten the arrow color on hover */
+}
+
+/* Left button at extreme left */
+.left-btn {
+    left: 20px;
+}
+
+/* Right button at extreme right */
+.right-btn {
+    right: 20px;
+}
+
+/* Close button (ESCAPE) */
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: rgba(72, 71, 71, 0.838);
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none !important; /* Remove background */
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove any shadows */
+}
+
+.close-btn:hover {
+    color: #3e3d3d; /* Lighten close button on hover */
+}
+.photo, 
+.modal-body img {
+    user-select: none; /* Prevent text/image selection */
+    -webkit-user-drag: none; /* Prevent dragging */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
