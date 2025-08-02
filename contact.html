@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – Eric McVey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-pills .nav-link.active {
+    background-color: rgb(59, 57, 57);
+    opacity: 80%; /* Active button background color */
+    color: white;           /* Active button text color */
+}
+  .nav-pills .nav-link {
+    color: black;    /* Default button text color */
+    font-weight: 500;
+
+}
+
+.logo {
+    font-family: 'Pinyon Script', cursive; /* Choose the specific font here */
+    font-size: 30px; /* Adjust size to your preference */
+    font-weight: 400; /* Adjust weight to match the font style */
+    color: #4c4a4a;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.navbar-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for navbar */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nav-item img {
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.nav-item img:hover {
+    transform: scale(1.75); /* Slight zoom on hover */
+}
+/* Center the logo and adjust navbar alignment when the screen shrinks */
+.social-media-container{
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+    
+    #navbarContent {
+        display: flex !important;
+    }
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 991px) {
+    #pillNav2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .social-media-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #navbarContent{
+        background-color: rgb(142, 141, 141);
+        opacity: 80%;
+        border-radius: 5%;
+    }
+}
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f7f7f7;
+      color: #4b4b4b;
+    }
+
+    .contact-form-container {
+      padding: 60px 20px;
+    }
+
+    .contact-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #aaa;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .form-control:focus {
+      border-color: #8a6e75;
+      box-shadow: none;
+    }
+
+    label {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #7e6b6c;
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+
+    .submit-btn {
+      margin-top: 30px;
+      border: 1px solid #aaa;
+      background-color: transparent;
+      color: #4b4b4b;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px 25px;
+      font-size: 0.9rem;
+    }
+
+    .submit-btn:hover {
+      background-color: #8a6e75;
+      color: #fff;
+      border-color: #8a6e75;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+    }
+    .footer {
+  font-size: 0.95rem;
+  background-color:transparent;
+}
+
+.footer a {
+  transition: color 0.3s ease !important; 
+}
+
+.footer a:hover {
+  color: #0d6efd !important; /* Bootstrap primary color */
+  text-decoration: none;
+}
+.footer-icon {
+      width: 18px;
+      height: 18px;
+      transition: opacity 0.3s ease;
+    }
+
+    .footer-icon:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="me-auto">
+                <p class="logo">Eric Mcvey</p>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navigation Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small ms-auto" id="pillNav2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" onclick="document.location='index.html'">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="document.location='work.html'">Work</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="document.location='contact.html'">Contact Us</button>
+                    </li>
+                    <div class="social-media-container">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-5 social-media-icon" id="instagram-tab" role="tab" aria-selected="false">
+                                <img src="images/instagram.svg" alt="Instagram">
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-5 social-media-icon" id="facebook-tab" role="tab" aria-selected="false">
+                                <img src="images\facebook.svg" alt="Facebook">
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-5 social-media-icon" id="twitter-tab" role="tab" aria-selected="false">
+                                <img src="images/twitter-x.svg" alt="Twitter">
+                            </button>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid contact-form-container">
+  <div class="row">
+    
+    <!-- Left: Image -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="photos\photo6.JPEG" alt="Bride" class="contact-image">
+    </div>
+
+    <!-- Right: Form -->
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <label for="name">Your Names (required)</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="email">Your Email (required)</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="wedding-date">Wedding Date</label>
+          <input type="date" class="form-control" id="wedding-date">
+        </div>
+
+        <div class="mb-3">
+          <label for="location">Wedding Location</label>
+          <input type="text" class="form-control" id="location">
+        </div>
+
+        <div class="mb-3">
+          <label for="referral">How did you hear about Eric?</label>
+          <input type="text" class="form-control" id="referral">
+        </div>
+
+        <div class="mb-3">
+          <label for="message">Please share a bit about you two and your plans</label>
+          <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer pt-4 mb-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      
+      <!-- Logo & Text -->
+      <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0">
+        <span class="text-muted small">© 2025 Eric McVey. All rights reserved.</span>
+      </div>
+
+      <!-- Social Media Icons with Local SVG Paths -->
+      <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+        <a href="https://instagram.com" class="mx-2" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram" class="footer-icon">
+        </a>
+        <a href="https://facebook.com" class="mx-2" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://twitter.com" class="mx-2" target="_blank" aria-label="Twitter">
+          <img src="images/twitter-x.svg" alt="Twitter" class="footer-icon">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
