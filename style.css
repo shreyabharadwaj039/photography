@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif !important;
 }
 .nav-pills .nav-link.active {
     background-color: rgb(59, 57, 57);
